@@ -618,7 +618,7 @@ input[type="checkbox"]{
     position: fixed;
     width: 40px;
     height: 20px;
-    background-color: #d7d8da;
+    background-color: #0d0d0e;
     appearance: none;
     outline: none;
     border-radius: 20px;
@@ -626,7 +626,7 @@ input[type="checkbox"]{
     transition: 0.5s ease;
 }
 input[type="checkbox"]:checked {
-background-color: chartreuse;
+background-color: black;
 }
 
 
@@ -636,7 +636,7 @@ input[type="checkbox"]::before {
     position: absolute;
     width: 16px;
     height: 16px;
-    background-color: rgb(248, 248, 29);
+    background-color: var(--text-color);
     border-radius: 50%;
     top: 2px;
     left: 2px;
