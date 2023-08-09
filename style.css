@@ -66,7 +66,6 @@ section {
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
-
 }
 
 .navbar a:hover,
@@ -145,12 +144,70 @@ span {
     font-size: 2rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
+    cursor:default;
 }
 
-.social-media a:hover {
-    background: var(--main-color);
-    color: var(--second-bg-color);
+/* .social-media .btn-linkedin:hover {
+    background: white;
+    color: blue;
+    border: none;
     box-shadow: 0 0 1rem var(--main-color);
+    cursor:default;
+} */
+
+.social-media .btn-html:hover {
+    background: white;
+    color: blue;
+    border: none;
+    /* box-shadow: 0 0 1rem var(--main-color); */
+}
+.social-media .btn-css:hover {
+    background: white;
+    color: orangered;
+    border: none;
+    /* box-shadow: 0 0 1rem var(--main-color); */
+}
+
+.social-media .btn-js:hover {
+    background: black;
+    color: yellow;
+    border: none;
+    /* box-shadow: 0 0 1rem var(--main-color); */
+}
+
+.social-media .btn-react:hover {
+    background: white;
+    color: blue;
+    border: none;
+    /* box-shadow: 0 0 1rem var(--main-color); */
+}
+
+.social-media .btn-bootstrap:hover {
+    background: white;
+    color: blue;
+    border: none;
+    /* box-shadow: 0 0 1rem var(--main-color); */
+}
+
+.social-media .btn-node:hover {
+    background: white;
+    color: green;
+    border: none;
+    /* box-shadow: 0 0 1rem var(--main-color); */
+}
+
+.social-media .btn-postgre:hover {
+    background: white;
+    color: blue;
+    border: none;
+    /* box-shadow: 0 0 1rem var(--main-color); */
+}
+
+.social-media .btn-github:hover {
+    background: white;
+    color: black;
+    border: none;
+    /* box-shadow: 0 0 1rem var(--main-color); */
 }
 
 
@@ -541,6 +598,8 @@ span {
 .about-img img{
     width: 90vw;
 }
+
+
 .footer{
     flex-direction: column-reverse;
 }
