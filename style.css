@@ -90,7 +90,7 @@ section {
     animation: floatImage 4s ease-in-out infinite;
 }
 
-@keyframes floatImage {
+/* @keyframes floatImage {
     0% {
         transform: translateY(0);
     }
@@ -100,7 +100,7 @@ section {
     100% {
         transform: translateY(0);
     }
-}
+} */
 
 
 .home-content h3 {
@@ -386,11 +386,11 @@ span {
     color: var(--second-bg-color);
 }
 
-.contact h2 {
+/* .contact h2 {
     margin-bottom: 3rem;
-}
+} */
 
-.contact form {
+/* .contact form {
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
@@ -427,7 +427,7 @@ span {
 .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
-}
+} */
 
 
 

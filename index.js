@@ -40,8 +40,8 @@ header.classList.toggle('sticky', window.scrollY > 100)
 // remueve el icono  cuando se hace click en el nav
 
 
-menuIcon.classList.toggle('bx-x');
-navbar.classList.remove('active');
+menuIcon.classList.toggle('active');
+navbar.classList.remove('bx-x');
 
 
 
