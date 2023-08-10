@@ -13,7 +13,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: #c2bdb4;
 }
 
 html {
@@ -132,8 +132,14 @@ span {
 
 }
 
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
 .social-media a {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
@@ -143,8 +149,9 @@ span {
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
-    cursor:default;
+    margin: 0 1.75rem; /* Ajusta los márgenes horizontalmente */
+    cursor: pointer;
+    transition: .5s ease;
 }
 
 /* .social-media .btn-linkedin:hover {
@@ -213,10 +220,10 @@ span {
 
 .btn {
     display: inline-block;
-    padding: 1rem 2.8rem;
+    padding: 1rem 1rem;
     background: var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
+    border-radius: 1rem;
+    /* box-shadow: 0 0 1rem var(--main-color); */
     font-size: 1.6rem;
     color: var(--second-bg-color);
     letter-spacing: .1rem;
@@ -224,8 +231,20 @@ span {
     transition: .5s ease;
 }
 
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Ajusta esto según tus necesidades */
+  }
+  
 .btn:hover {
     box-shadow: none;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    
 }
 
 .about {
@@ -306,7 +325,7 @@ span {
 }
 
 .portfolio {
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .portfolio h2 {

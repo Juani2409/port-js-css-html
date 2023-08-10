@@ -80,3 +80,17 @@ function enableDarkMode(){
     let main_body = document.body
     main_body.classList.toggle('light-mode')
 }
+
+
+
+//Boton descarga CV
+
+// const boton = document.getElementById('miBoton');
+
+// boton.addEventListener('mouseover', () => {
+//   boton.textContent = 'Descargar';
+// });
+
+// boton.addEventListener('mouseout', () => {
+//   boton.textContent = 'CV';
+// });
