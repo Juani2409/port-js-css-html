@@ -76,10 +76,10 @@ loop:true
 
 
 // modo diaaa-noche
-function enableDarkMode(){
-    let main_body = document.body
-    main_body.classList.toggle('light-mode')
-}
+// function enableDarkMode(){
+//     let main_body = document.body
+//     main_body.classList.toggle('light-mode')
+// }
 
 
 
