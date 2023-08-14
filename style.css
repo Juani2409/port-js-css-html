@@ -852,6 +852,11 @@ input[type= "checkbox"]:checked::before{
     transform: scale(1.02);
 
 }
+.img-services{
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
 
 .services-box i {
     font-size: 7rem;
