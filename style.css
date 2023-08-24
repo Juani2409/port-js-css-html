@@ -715,6 +715,113 @@ span {
 
 
 
+.icono-email, .icono-linkedin, .icono-whatsapp, .icono-github{
+    color:var(--text-color);
+    font-size: 25px;
+}
+.icono-email:hover, .icono-linkedin:hover, .icono-whatsapp:hover, .icono-github:hover{
+    color:var(--main-color);
+    font-size: 25px;
+}
+
+
+/* Cards giratorias */
+.estudios{
+    background: var(--second-bg-color);
+}
+.estudios-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.card{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img{
+    width: 100%;
+    height: 100%;
+   }
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    line-height: 40px;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    font-size: 15px;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a{
+    color: #f3f3f3;
+}
+
+.card .back h3{
+    font-size: 30px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
 
 /* modo dia */
 
@@ -757,195 +864,3 @@ input[type= "checkbox"]:checked::before{
     color: #1f242d;
 } */
 
-
-
-
-.icono-email, .icono-linkedin, .icono-whatsapp, .icono-github{
-    color:var(--text-color);
-    font-size: 25px;
-}
-.icono-email:hover, .icono-linkedin:hover, .icono-whatsapp:hover, .icono-github:hover{
-    color:var(--main-color);
-    font-size: 25px;
-}
-
-.services {
-    background: var(--second-bg-color);
-}
-
-.services h2 {
-    margin-bottom: 4rem;
-}
-
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-}
-
-.services-box {
-    width: 100%;
-    padding: 20px;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
-    overflow: hidden;
-}
-
-.services-box img {
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-}
-
-/* Media Query para adaptar a una sola columna en pantallas pequeñas */
-@media (max-width: 617px) {
-    .services-container {
-        grid-template-columns: 1fr; /* Una columna */
-    }
-}
-
-
-
-
-
-/* cardss */
-/* .estudios{
-    background: var(--second-bg-color);
-}
-
-.estudios h2 {
-    margin-bottom: 4rem;
-}
-
-.estudios-container{
-    width: 100%;
-    max-width: 1200px;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-}
-
-.estudios-container .card{
-    width: 200px;
-    height: 300px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s;
-}
-
-.estudios-container .card img{
-    width: 200px;
-    height: 150px;
-
-}
-
-.estudios-container .card h1{
-    font-weight: 600;
-}
-
-.estudios-container .card p{
-    padding: 0 1rem;
-    font-size: 12px;
-    font-weight: 300;
-}
- */
-
-
-/* Cards giratorias */
-.estudios{
-    background: var(--second-bg-color);
-}
-.estudios-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    
-}
-
-.card{
-    position: relative;
-    width: 350px;
-    height: 200px;
-    margin: 20px;
-}
-
-.card .face{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.card .front{
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000;
-}
-
-.card .front img{
-    
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card .front h3{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    background: rgba(0, 0, 0, .4);
-    text-align: center;
-}
-
-.card .back {
-    transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
-    padding: 15px;
-    color: #f3f3f3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    box-shadow: 0 5px 10px #000;
-}
-
-
-.card .back .link{
-    border-top: solid 1px #f3f3f3;
-    height: 50px;
-    line-height: 50px;
-}
-
-.card .back .link a{
-    color: #f3f3f3;
-}
-
-.card .back h3{
-    font-size: 30px;
-    margin-top: 20px;
-    letter-spacing: 2px;
-}
-
-.card .back p{
-    letter-spacing: 1px;
-}
-
-.card:hover .front{
-    transform: perspective(600px) rotateY(180deg);
-}
-
-.card:hover .back{
-    transform: perspective(600px) rotateY(360deg);
-}
