@@ -115,8 +115,8 @@ section {
 
 .contact-column .icono-email:hover{
     background: white;
-    color: black;
-    border: 2px solid black;
+    color: rgb(249, 4, 4);
+    border: 2px solid rgb(230, 6, 6);
 }
 
 .contact-column .icono-linkedin:hover{
