@@ -638,14 +638,7 @@ span {
         font-size: 35px;
     }
 
-    .about-content {
-
-        top: 50%;
-        /* Centra verticalmente */
-        left: 50%;
-        /* Centra horizontalmente */
-        transform: translate(-50%, -50%);
-    }
+ 
 
     .about img {
         width: 40vw;
@@ -673,11 +666,10 @@ span {
 
     .about {
         display: block;
+
     }
 
-    .about-img {
-        display: none;
-    }
+    
 
     .social-media {
         display: grid;
@@ -732,9 +724,7 @@ span {
         display: block;
     }
 
-    .about {
-        display: block;
-    }
+   
 
     .social-media {
         display: grid;
@@ -748,10 +738,6 @@ span {
 
 @media (max-width: 365px) {
 
-    /* .home-img img {
-        width: 90vw;
-
-    } */
     .home {
         margin-top: 300px;
 
