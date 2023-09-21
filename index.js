@@ -94,3 +94,22 @@ loop:true
 // boton.addEventListener('mouseout', () => {
 //   boton.textContent = 'CV';
 // });
+
+
+
+// Funcion para los iconos de tecnologias
+
+
+// Obtener todos los elementos con la clase 'icon-link'
+const iconLinks = document.querySelectorAll('.icon-link');
+
+// Agregar un escuchador de eventos de clic a cada elemento
+iconLinks.forEach(function(iconLink) {
+  iconLink.addEventListener('click', function(event) {
+    // Evitar el comportamiento predeterminado del enlace (evitar la navegación)
+    event.preventDefault();
+
+    // Alternar una clase CSS para cambiar la apariencia del ícono
+    this.classList.toggle('active');
+  });
+});

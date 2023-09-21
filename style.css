@@ -196,6 +196,44 @@ span {
     line-height: 1.5;
 }
 
+
+
+
+
+
+
+
+
+
+/* Definir los estilos predeterminados para todos los enlaces de íconos */
+.social-media .icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 0 1.75rem;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .social-media {
     display: flex;
     justify-content: center;
